@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet);
+html,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: linear-gradient(to bottom, #FFD900,#62E200);
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.img{ /* Эта часть отвечает за картинку и текст сверху над input  */
+	height: 50%;
+	width: 100%;
+	border: 1px solid none;
+	text-align: center;
+	line-height: 0.1em;
+}
+.input{ /* Эта часть отвечает за input и кнопку под картинкой */
+	height: 50%;
+	width: 100%;
+	text-align: center;
+	flex-direction: column;
+}
+
+
+.text{ /* Это настройка INPUT */
+	width: 50%;
+	padding: 3vh;
+	font-size: 25px;
+	border-radius: 10vh;
+	border: none;
+	outline: none;
+}
+
+.button{ /* Эта настройка отвечает за кнопку */
+	margin-top: 5vh;
+	text-decoration: none;
+	outline: none;
+	padding: 10px;
+	font-size: 30px;
+	background-color: #FFD900;
+	border: 2px solid #FFEA73;
+	border-radius: 3vh;
+	color: #285C00;
+	font-family: Source Code Pro;
+}
+.button:hover{
+	box-shadow: 0 0 4px ;
+}
+.button:active{
+	background-color: #9D8500
+}
+
+.paws{ /* Настройки текста pawS */
+	position: relative;
+	font-family: cursive;
+	font-size: 10vh;
+	color:#62E200;
+  	text-shadow: 1px 0 1px #000, 
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+
+}
+.swap{ /* Настройки текста  Swap*/
+	position: relative;
+	font-family: cursive;
+	font-size: 10vh;
+	color:#FFD900;
+  	text-shadow: 1px 0 1px #000, 
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+}

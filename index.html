@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swap-Paws</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+	<div class="img"><!-- Этот отдел отвечает за картинку и приписку к сайту -->
+			<p class="swap">--Swap-></p>
+			<p class="paws"><-pawS--</p>
+	</div>
+
+	<div class="input"> <!-- Этот отдел отвечает за input и button -->
+		<input type="text" name="text" class="text" placeholder="Text <--> txeT" id='elem1'>
+		<br />
+		<!-- Этот input - Кнопка: SWAP-PAWS -->
+		<input class="button" type="button" onclick="change();reverse();" value="SWAP" id="myButton1"></input>
+		<!-- Этот скрипт отвечает за изменение названия кнопки после нажатия на неё -->
+		<script type="text/javascript">
+			function change()
+{
+    var elem = document.getElementById("myButton1");
+    if (elem.value=="SWAP") elem.value = "PAWS";
+    else elem.value = "SWAP";
+}
+		</script>
+		<!-- КОНЕЦ СКРИПТА -->
+
+		<!--<script type="text/javascript">
+			function reverse()
+{
+	var val = document.getElementById('elem1').value;
+    var s = "";
+  for (let i = val.length - 1; i >= 0; i--)
+  {
+    if (val[i] != " ")        s += val[i];
+    if (val[s.length] == " ") s += val[s.length];
+  }
+  document.getElementById('elem1').value = s;
+}
+		</script>-->
+		<!-- Этот скрипт отвечает за изменнение текста НАОБОРОТ. Пример: Пидор -> родиП -->
+		<script type="text/javascript">
+			function reverse()
+			{
+				var val = document.getElementById('elem1').value;
+				var rr = val.split("").reverse().join("");
+				document.getElementById('elem1').value = rr;
+			}
+		</script>
+		<!-- КОНЕЦ СКРИПТА -->
+</body>
+</html>
